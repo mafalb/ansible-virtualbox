@@ -9,7 +9,7 @@
   tags:
     - always
 
-- debug: msg={{ vbox.pkg_mgr }}
+- debug: msg={{ virtualbox.pkg_mgr }}
   tags:
     - debug
 
@@ -17,4 +17,4 @@
   package:
     name: virtualbox
     state: present
-    use: "{{ vbox.pkg_mgr|default(ansible_pkg_mgr) }}"
+    use: "{{ virtualbox.pkg_mgr|default(ansible_pkg_mgr) }}"
